@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#video-grid{
+ display: flex;
+ justify-content: center;
+}
+video {
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+}
+.main__left{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+.main__video {
+    flex-grow: 1;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__right{
+    flex: 0.2;
+}
+.main__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.main__controls__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
